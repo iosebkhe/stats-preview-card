@@ -88,7 +88,7 @@ p {
       rgb(170, 92, 219),
       rgb(170, 92, 219)
     ),
-    url(/images/image-header-desktop.jpg);
+    url(./images/image-header-desktop.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;

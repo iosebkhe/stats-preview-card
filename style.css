@@ -1,0 +1,99 @@
+:root {
+  --main-bg-clr: rgb(9, 11, 26);
+  --card-bg-clr: rgb(27, 25, 56);
+  --accent-clr: rgb(170, 92, 219);
+  --heading-clr: rgb(255, 255, 255);
+  --main-paragraph-clr: rgba(255, 255, 255, 0.75);
+  --review-text-clr: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--main-bg-clr);
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.card {
+  max-width: 1000px;
+  background-color: var(--card-bg-clr);
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card__text-box {
+  font-weight: 700;
+  padding: 5rem;
+}
+
+.card__heading,
+.card__review-heading {
+  color: var(--heading-clr);
+  font-weight: 700;
+}
+
+.card__heading {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.card__heading span {
+  color: var(--accent-clr);
+}
+
+.card__text {
+  color: var(--main-paragraph-clr);
+  font-size: 1.4rem;
+  padding-right: 2rem;
+  margin-bottom: 5rem;
+}
+
+.card__review-box {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+
+.card__review-heading {
+  font-size: 2.5rem;
+}
+
+.card__review {
+}
+
+.card__review p {
+  color: var(--review-text-clr);
+  text-transform: uppercase;
+}
+
+.card__img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(170, 92, 219),
+      rgb(170, 92, 219)
+    ),
+    url(/images/image-header-desktop.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  align-self: stretch;
+}
